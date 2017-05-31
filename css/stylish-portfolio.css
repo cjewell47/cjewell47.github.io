@@ -226,6 +226,11 @@ hr.small {
     height: 500px;
 }
 
+.whoiam {
+  height: 500px;
+  background-color: pink;
+}
+
 @media(max-width:768px) {
     .map {
         height: 75%;
