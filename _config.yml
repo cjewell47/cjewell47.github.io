@@ -2,7 +2,7 @@
 title: Charles Jewell
 email: mail@charlesjewell.com
 description: Charles Jewell - Web Developer
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "" 
 url: "" # the base hostname & protocol for your site
 
 # User setting
