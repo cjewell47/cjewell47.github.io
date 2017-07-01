@@ -44,10 +44,10 @@ $(() => {
   });
 
   $(document).ready(function() {
-    $(this).find('#headerText1').delay(350).fadeIn(1800);
-    $(this).find('#headerText2').delay(550).fadeIn(1800);
-    $(this).find('#headerText3').delay(750).fadeIn(1800);
-    $(this).find('#findOut').delay(950).fadeIn(1800);
+    $(this).find('#headerText1').delay(350).fadeTo(1800, 1);
+    $(this).find('#headerText2').delay(550).fadeTo(1800, 1);
+    $(this).find('#headerText3').delay(750).fadeTo(1800, 1);
+    $(this).find('#findOut').delay(950).fadeTo(1800, 1);
   });
 
 });

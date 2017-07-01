@@ -171,13 +171,14 @@ hr.small {
 
 #headerText1, #headerText2, #headerText3 {
   /*visibility: hidden;*/
-  display: none;
-  /*opacity: 0;*/
+  /*display: none;*/
+  opacity: 0;
 }
 
 #findOut {
   border-radius: 100px;
-  display: none;
+  /*display: none;*/
+  opacity: 0;
 }
 
 /* About */
