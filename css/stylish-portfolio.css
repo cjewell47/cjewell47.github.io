@@ -169,9 +169,10 @@ hr.small {
 
 }
 
-.headerText {
+#headerText1, #headerText2, #headerText3 {
   /*visibility: hidden;*/
   display: none;
+  /*opacity: 0;*/
 }
 
 #findOut {
