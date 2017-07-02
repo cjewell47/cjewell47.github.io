@@ -212,7 +212,8 @@ hr.small {
 .service-img {
   height: 160px;
   width: :160px;
-  opacity: 0.6;
+  /*opacity: 0.6;*/
+  opacity: 0;
 }
 
 .service-item {
@@ -220,11 +221,23 @@ hr.small {
     color: #333;
 }
 
+.who-text, .port-text, .con-text {
+  opacity: 0;
+}
+
 .service-btn {
   border-radius: 100px;
+  opacity: 0;
   /*background-color: #333;
   opacity: 0.6;
   color: white;*/
+}
+
+/*Who I am */
+
+.whoiam {
+  height: 100%;
+  background-color: pink;
 }
 
 /* Callout */
@@ -273,11 +286,6 @@ hr.small {
 
 .map {
     height: 500px;
-}
-
-.whoiam {
-  height: 500px;
-  background-color: pink;
 }
 
 @media(max-width:768px) {
