@@ -35,14 +35,14 @@ body {
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(51,51,51, 0.6);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(51,51,51,1);
 }
 
 .btn-light {
@@ -185,6 +185,7 @@ hr.small {
 }
 
 #aboutMeText {
+  font-size: 36px;
   background: #fffcdc;
   background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
   background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
@@ -211,6 +212,7 @@ hr.small {
 .service-img {
   height: 160px;
   width: :160px;
+  opacity: 0.6;
 }
 
 .service-item {
@@ -220,6 +222,9 @@ hr.small {
 
 .service-btn {
   border-radius: 100px;
+  /*background-color: #333;
+  opacity: 0.6;
+  color: white;*/
 }
 
 /* Callout */

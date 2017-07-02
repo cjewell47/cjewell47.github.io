@@ -50,4 +50,28 @@ $(() => {
     $(this).find('#findOut').delay(950).fadeTo(1800, 1);
   });
 
+  $('#who-btn').mouseenter(function() {
+    $('#who-icon').fadeTo(50, 1);
+  });
+
+  $('#who-btn').mouseleave(function() {
+    $('#who-icon').fadeTo(50, 0.6);
+  });
+
+  $('#port-btn').mouseenter(function() {
+    $('#port-icon').fadeTo(50, 1);
+  });
+
+  $('#port-btn').mouseleave(function() {
+    $('#port-icon').fadeTo(50, 0.6);
+  });
+
+  $('#con-btn').mouseenter(function() {
+    $('#con-icon').fadeTo(50, 1);
+  });
+
+  $('#con-btn').mouseleave(function() {
+    $('#con-icon').fadeTo(50, 0.6);
+  });
+
 });
