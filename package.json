@@ -1,0 +1,8 @@
+{
+  "name": "cjewell47.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cjewell47/cjewell47.github.io.git",
+  "author": "cjewell47 <charles.jewell47@gmail.com>",
+  "license": "MIT"
+}
