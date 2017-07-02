@@ -168,14 +168,11 @@ hr.small {
 }
 
 #headerText1, #headerText2, #headerText3 {
-  /*visibility: hidden;*/
-  /*display: none;*/
   opacity: 0;
 }
 
 #findOut {
   border-radius: 100px;
-  /*display: none;*/
   opacity: 0;
 }
 
@@ -183,16 +180,46 @@ hr.small {
 
 .about {
     padding: 50px 0;
+    height: 25%;
+    background: #333;
+}
+
+#aboutMeText {
+  background: #fffcdc;
+  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
+  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: linear-gradient(to left, #d9a7c7, #fffcdc);
+  // @include linear-gradient(#d9a7c7, #fffcdc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Services */
 
 .services {
     padding: 50px 0;
+    height: 75%;
+    background: #fffcdc;
+    background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
+    background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
+    background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
+    background: linear-gradient(to left, #d9a7c7, #fffcdc);
+    // @include linear-gradient(#d9a7c7, #fffcdc);
+}
+
+.service-img {
+  height: 160px;
+  width: :160px;
 }
 
 .service-item {
     margin-bottom: 30px;
+    color: #333;
+}
+
+.service-btn {
+  border-radius: 100px;
 }
 
 /* Callout */
