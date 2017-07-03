@@ -133,4 +133,12 @@ $(() => {
     $('#downfromwhoiam').fadeTo(150, 0.6);
   });
 
+  $('.img-2').mouseenter(function() {
+    $(this).fadeTo(300, 1);
+  });
+
+  $('.img-2').mouseleave(function() {
+    $(this).fadeTo(300, 0);
+  });
+
 });

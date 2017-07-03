@@ -300,10 +300,36 @@ hr.small {
     -o-background-size: cover;
 }*/
 
+/*Space*/
+
+.spaceDivide {
+  height: 30%;
+  background: #fffcdc;
+  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
+  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: linear-gradient(to left, #d9a7c7, #fffcdc);
+  // @include linear-gradient(#d9a7c7, #fffcdc);
+}
+
 /* Portfolio */
 
 .portfolio {
     padding: 50px 0;
+    background: #fffcdc;
+    background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
+    background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
+    background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
+    background: linear-gradient(to left, #d9a7c7, #fffcdc);
+    // @include linear-gradient(#d9a7c7, #fffcdc);
+}
+
+hr {
+  border-color: #333;
+}
+
+.my-img-container {
+  position: relative;
 }
 
 .portfolio-item {
@@ -314,9 +340,17 @@ hr.small {
     margin: 0 auto;
 }
 
-.img-portfolio:hover {
-    opacity: 0.8;
+.img-1 {
+  position: relative;
 }
+
+.img-2 {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
 
 /* Call to Action */
 
