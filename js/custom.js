@@ -141,4 +141,14 @@ $(() => {
     $(this).fadeTo(300, 0);
   });
 
+  $('#downfromport').mouseenter(function() {
+    $('#downfromport-text').fadeTo(150, 1);
+    $('#downfromport').fadeTo(150, 1);
+  });
+
+  $('#downfromport').mouseleave(function() {
+    $('#downfromport-text').fadeTo(150, 0);
+    $('#downfromport').fadeTo(150, 0.6);
+  });
+
 });

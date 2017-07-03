@@ -356,21 +356,34 @@ hr {
   border-radius: 100px;
 }
 
+#downfromport-text {
+  margin-top: 4%;
+  font-size: 16px;
+  opacity: 0;
+}
 
-/* Call to Action */
+#downfromport {
+  height: 65px;
+  width: 90px;
+  opacity: 0.6;
+  /*opacity: 0;*/
+}
 
-.call-to-action {
+/* Contact */
+
+.contact {
+    height: 60%;
     padding: 50px 0;
+    background: #fffcdc;
+    background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
+    background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
+    background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
+    background: linear-gradient(to left, #d9a7c7, #fffcdc);
+    // @include linear-gradient(#d9a7c7, #fffcdc);
 }
 
-.call-to-action .btn {
+.contact .btn {
     margin: 10px;
-}
-
-/* Map */
-
-.map {
-    height: 500px;
 }
 
 @media(max-width:768px) {
@@ -387,5 +400,6 @@ hr {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 20px 0;
+    background-color: #333;
 }
