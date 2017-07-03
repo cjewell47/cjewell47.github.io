@@ -179,7 +179,8 @@ hr.small {
 /* About */
 
 .about {
-    padding: 50px 0;
+    /*padding: 50px 0;*/
+    padding: 4% 0;
     height: 25%;
     background: #333;
 }
@@ -236,13 +237,58 @@ hr.small {
 /*Who I am */
 
 .whoiam {
-  height: 100%;
-  background-color: pink;
+  padding: 4% 0;
+  height: 25%;
+  background-color: #333;
 }
+
+#whoiamtext {
+  font-size: 36px;
+  background: #fffcdc;
+  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
+  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: linear-gradient(to left, #d9a7c7, #fffcdc);
+  // @include linear-gradient(#d9a7c7, #fffcdc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Who I am 2?*/
+
+#whoiam2 {
+  height: 75%;
+  background: #fffcdc;
+  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
+  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: linear-gradient(to left, #d9a7c7, #fffcdc);
+  // @include linear-gradient(#d9a7c7, #fffcdc);
+}
+
+.bio {
+  margin-top: 6%;
+  font-size: 18px;
+  /*opacity: 0;*/
+}
+
+#downfromwho-text {
+  margin-top: 12%;
+  font-size: 16px;
+  opacity: 0;
+}
+
+#downfromwhoiam {
+  height: 65px;
+  width: 90px;
+  opacity: 0.6;
+  /*opacity: 0;*/
+}
+
 
 /* Callout */
 
-.callout {
+/*.callout {
     display: table;
     width: 100%;
     height: 400px;
@@ -252,7 +298,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
+}*/
 
 /* Portfolio */
 
