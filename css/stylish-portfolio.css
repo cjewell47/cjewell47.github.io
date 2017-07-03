@@ -333,7 +333,7 @@ hr {
 }
 
 .portfolio-item {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 .img-portfolio {
@@ -342,6 +342,7 @@ hr {
 
 .img-1 {
   position: relative;
+  margin-bottom: 3%;
 }
 
 .img-2 {
@@ -349,6 +350,10 @@ hr {
   opacity: 0;
   top: 0;
   left: 0;
+}
+
+.read-more-link {
+  color: #333;
 }
 
 
