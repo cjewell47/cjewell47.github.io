@@ -201,7 +201,7 @@ hr.small {
 
 .services {
     padding: 50px 0;
-    height: 75%;
+    /*height: 75%;*/
     background: #fffcdc;
     background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
     background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
