@@ -151,4 +151,12 @@ $(() => {
     $('#downfromport').fadeTo(150, 0.6);
   });
 
+  $('.contact-icons').mouseenter(function() {
+    $(this).fadeTo(150, 1);
+  });
+
+  $('.contact-icons').mouseleave(function() {
+    $(this).fadeTo(150, 0.6);
+  });
+
 });
