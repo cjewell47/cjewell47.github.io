@@ -256,6 +256,14 @@ hr.small {
 
 /*Who I am 2?*/
 
+#profile-picture {
+  margin-top: 5%;
+  height: 250px;
+  border-radius: 250px;
+  /*border: 2px solid #333;*/
+  /*box-shadow: 2px 2px 2px  2px #333;*/
+}
+
 #whoiam2 {
   height: 75%;
   background: #fffcdc;
