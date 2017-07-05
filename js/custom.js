@@ -133,12 +133,44 @@ $(() => {
     $('#downfromwhoiam').fadeTo(150, 0.6);
   });
 
-  $('.img-2').mouseenter(function() {
+  $('.img-2-1').mouseenter(function() {
     $(this).fadeTo(300, 1);
+    $('.img-text-1').fadeTo(300, 1);
   });
 
-  $('.img-2').mouseleave(function() {
+  $('.img-2-1').mouseleave(function() {
     $(this).fadeTo(300, 0);
+    $('.img-text-1').fadeTo(300, 0);
+  });
+
+  $('.img-2-2').mouseenter(function() {
+    $(this).fadeTo(300, 1);
+    $('.img-text-2').fadeTo(300, 1);
+  });
+
+  $('.img-2-2').mouseleave(function() {
+    $(this).fadeTo(300, 0);
+    $('.img-text-2').fadeTo(300, 0);
+  });
+
+  $('.img-2-3').mouseenter(function() {
+    $(this).fadeTo(300, 1);
+    $('.img-text-3').fadeTo(300, 1);
+  });
+
+  $('.img-2-3').mouseleave(function() {
+    $(this).fadeTo(300, 0);
+    $('.img-text-3').fadeTo(300, 0);
+  });
+
+  $('.img-2-4').mouseenter(function() {
+    $(this).fadeTo(300, 1);
+    $('.img-text-4').fadeTo(300, 1);
+  });
+
+  $('.img-2-4').mouseleave(function() {
+    $(this).fadeTo(300, 0);
+    $('.img-text-4').fadeTo(300, 0);
   });
 
   $('#downfromport').mouseenter(function() {
