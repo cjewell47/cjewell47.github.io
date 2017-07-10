@@ -263,7 +263,7 @@ hr.small {
 }
 
 #whoiam2 {
-  height: 75%;
+  /*height: 75%;*/
   background: #fffcdc;
   background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
   background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
@@ -317,6 +317,7 @@ hr.small {
   background: linear-gradient(to left, #d9a7c7, #fffcdc);
   // @include linear-gradient(#d9a7c7, #fffcdc);
 }
+
 
 /* Portfolio */
 
