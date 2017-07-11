@@ -359,9 +359,21 @@ hr {
   left: 0;
 }
 
+@media screen and (max-width:1024px) {
+  .img-2-1, .img-2-2, .img-2-3, .img-2-4 {
+    opacity: 1;
+  }
+}
+
 .img-text-1, .img-text-2, .img-text-3, .img-text-4 {
   opacity: 0;
   font-size: 16px;
+}
+
+@media screen and (max-width:1024px) {
+  .img-text-1, .img-text-2, .img-text-3, .img-text-4 {
+    opacity: 1;
+  }
 }
 
 .read {
