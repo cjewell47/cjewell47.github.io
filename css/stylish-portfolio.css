@@ -319,6 +319,42 @@ hr.small {
 }
 
 
+/*Skills*/
+
+#skills {
+  background: #fffcdc;
+  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
+  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
+  background: linear-gradient(to left, #d9a7c7, #fffcdc);
+  // @include linear-gradient(#d9a7c7, #fffcdc);
+}
+
+.rule-padding {
+  padding-bottom: 20px;
+}
+
+.skill-icon {
+  max-height: 120px;
+}
+
+.skill-text {
+  font-size: 18px;
+}
+
+
+#downfromskills-text {
+  margin-top: 8%;
+  font-size: 16px;
+  opacity: 0;
+}
+
+#downfromskills {
+  height: 65px;
+  width: 90px;
+  opacity: 0.6;
+}
+
 /* Portfolio */
 
 .portfolio {

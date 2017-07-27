@@ -189,6 +189,16 @@ $(() => {
     }
   });
 
+  $('#downfromskills').mouseenter(function() {
+    $('#downfromskills-text').fadeTo(150, 1);
+    $('#downfromskills').fadeTo(150, 1);
+  });
+
+  $('#downfromskills').mouseleave(function() {
+    $('#downfromskills-text').fadeTo(150, 0);
+    $('#downfromskills').fadeTo(150, 0.6);
+  });
+
   $('#downfromport').mouseenter(function() {
     $('#downfromport-text').fadeTo(150, 1);
     $('#downfromport').fadeTo(150, 1);
