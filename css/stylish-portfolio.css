@@ -210,6 +210,11 @@ hr.small {
     // @include linear-gradient(#d9a7c7, #fffcdc);
 }
 
+.menu-title {
+  color: #333;
+  padding-bottom: 30px;
+}
+
 .service-img {
   height: 150px;
   width: :150px;
