@@ -222,7 +222,7 @@ hr.small {
     color: #333;
 }
 
-.who-text, .port-text, .con-text {
+.who-text, .port-text, .con-text, .skill-text {
   opacity: 0;
 }
 
@@ -334,13 +334,13 @@ hr.small {
   padding-bottom: 20px;
 }
 
-.skill-icon {
+.skills-icon {
   max-height: 120px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
 
-.skill-text {
+.skills-text {
   font-size: 18px;
 }
 

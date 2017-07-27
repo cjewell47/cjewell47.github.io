@@ -65,9 +65,12 @@ $(() => {
       $('#who-icon').delay(600).fadeTo(1800, 0.6);
       $('.who-text').delay(600).fadeTo(1800, 1);
       $('#who-btn').delay(600).fadeTo(1800, 1);
-      $('#port-icon').delay(900).fadeTo(1800, 0.6);
-      $('.port-text').delay(900).fadeTo(1800, 1);
-      $('#port-btn').delay(900).fadeTo(1800, 1);
+      $('#skill-icon').delay(800).fadeTo(1800, 0.6);
+      $('.skill-text').delay(800).fadeTo(1800, 1);
+      $('#skill-btn').delay(800).fadeTo(1800, 1);
+      $('#port-icon').delay(1000).fadeTo(1800, 0.6);
+      $('.port-text').delay(1000).fadeTo(1800, 1);
+      $('#port-btn').delay(1000).fadeTo(1800, 1);
       $('#con-icon').delay(1200).fadeTo(1800, 0.6);
       $('.con-text').delay(1200).fadeTo(1800, 1);
       $('#con-btn').delay(1200).fadeTo(1800, 1);
@@ -89,6 +92,14 @@ $(() => {
 
   $('#who-btn').mouseleave(function() {
     $('#who-icon').fadeTo(20, 0.6);
+  });
+
+  $('#skill-btn').mouseenter(function() {
+    $('#skill-icon').fadeTo(20, 1);
+  });
+
+  $('#skill-btn').mouseleave(function() {
+    $('#skill-icon').fadeTo(20, 0.6);
   });
 
   $('#port-btn').mouseenter(function() {
