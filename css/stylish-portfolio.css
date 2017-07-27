@@ -336,15 +336,21 @@ hr.small {
 
 .skill-icon {
   max-height: 120px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .skill-text {
   font-size: 18px;
 }
 
+#current-skill {
+  font-size: 14px;
+}
+
 
 #downfromskills-text {
-  margin-top: 8%;
+  margin-top: 25px;
   font-size: 16px;
   opacity: 0;
 }
