@@ -3,21 +3,21 @@ $(() => {
 
 
   // Closes the sidebar menu
-  $("#menu-close").click(function(e) {
+  $('#menu-close').click(function(e) {
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
+    $('#sidebar-wrapper').toggleClass('active');
   });
 
   // Opens the sidebar menu
-  $("#menu-toggle").click(function(e) {
+  $('#menu-toggle').click(function(e) {
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
+    $('#sidebar-wrapper').toggleClass('active');
   });
 
   // Scrolls to the selected menu item on the page
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
 
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -227,5 +227,25 @@ $(() => {
   $('.contact-icons').mouseleave(function() {
     $(this).fadeTo(150, 0.6);
   });
+
+  let count = 0;
+  function myCount() {
+    count++;
+    const degree = count % 360;
+
+    $('.header').css(
+      'background',
+      '-webkit-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      'background',
+      '-o-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      'background',
+      '-moz-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      'background',
+      'linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)'
+    );
+
+  }
+
+  setInterval(myCount, 30);
 
 });
