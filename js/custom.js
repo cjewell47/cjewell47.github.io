@@ -52,14 +52,11 @@ $(() => {
 
   $(window).scroll(function () {
     var headerHeight   = $('.header').height();
-    // var aboutHeight    = $('.about').height();
-    // var servicesHeight = $('.services').height();
+
     var viewPortSize   = $(window).height();
     var triggerAt      = 150;
-    // var triggerAt2     = 250;
     var triggerHeight  = (headerHeight - viewPortSize) + triggerAt;
-    // var combinedHeight = (headerHeight + aboutHeight + servicesHeight);
-    // var triggerHeight2 = (combinedHeight - viewPortSize) + triggerAt2;
+
 
     if ($(window).scrollTop() >= triggerHeight) {
       $('#who-icon').delay(600).fadeTo(1800, 0.6);
@@ -75,14 +72,8 @@ $(() => {
       $('.con-text').delay(1200).fadeTo(1800, 1);
       $('#con-btn').delay(1200).fadeTo(1800, 1);
       $(this).off('scroll');
-      // $(this).on('scroll');
     }
 
-    // if ($(window).scrollTop() >= triggerHeight2) {
-    //   $('.bio').delay(600).fadeTo(1800, 1);
-    //   $('#downfromwhoiam').delay(900).fadeTo(1800, 0.6);
-    //   $(this).off('scroll');
-    // }
   });
 
 
@@ -117,22 +108,6 @@ $(() => {
   $('#con-icon').mouseleave(function() {
     $('#con-icon').fadeTo(20, 0.6);
   });
-
-  // $(window).scroll(function () {
-  //   var headerHeight = $('.header').height();
-  //   var aboutHeight  = $('.about').height();
-  //   var servicesHeight = $('.services').height();
-  //   var viewPortSize = $(window).height();
-  //   var triggerAt2 = 250;
-  //   var combinedHeight = (headerHeight + aboutHeight + servicesHeight);
-  //   var triggerHeight2 = (combinedHeight - viewPortSize) + triggerAt2;
-  //
-  //   if ($(window).scrollTop() >= triggerHeight2) {
-  //     $('.bio').delay(600).fadeTo(1800, 1);
-  //     $('#downfromwhoiam').delay(900).fadeTo(1800, 0.6);
-  //     $(this).off('scroll');
-  //   }
-  // });
 
   $('#downfromwhoiam').mouseenter(function() {
     $('#downfromwho-text').fadeTo(150, 1);
@@ -245,6 +220,12 @@ $(() => {
     );
 
   }
+  // 
+  // $('.portfolio-carousel').slick({
+  //   'accessibility': true,
+  //   'autoplay': false,
+  //   'arrows': true
+  // });
 
   setInterval(myCount, 30);
 
