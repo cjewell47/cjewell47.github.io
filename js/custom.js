@@ -220,12 +220,6 @@ $(() => {
     );
 
   }
-  // 
-  // $('.portfolio-carousel').slick({
-  //   'accessibility': true,
-  //   'autoplay': false,
-  //   'arrows': true
-  // });
 
   setInterval(myCount, 30);
 
