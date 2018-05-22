@@ -209,14 +209,22 @@ $(() => {
     const degree = count % 360;
 
     $('.header').css(
+      // 'background',
+      // '-webkit-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      // 'background',
+      // '-o-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      // 'background',
+      // '-moz-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      // 'background',
+      // 'linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)'
       'background',
-      '-webkit-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      '-webkit-linear-gradient(' + degree + 'deg, #3494e6, #ec6ead)',
       'background',
-      '-o-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      '-o-linear-gradient(' + degree + 'deg, #3494e6, #ec6ead)',
       'background',
-      '-moz-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
+      '-moz-linear-gradient(' + degree + 'deg, #3494e6, #ec6ead)',
       'background',
-      'linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)'
+      'linear-gradient(' + degree + 'deg, #3494e6, #ec6ead)'
     );
 
   }
