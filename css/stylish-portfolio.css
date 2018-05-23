@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+
 
 /* Global Styles */
 
@@ -13,7 +9,6 @@ body {
 }
 
 body {
-    /*font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family: 'Comfortaa', cursive;
 }
 
@@ -31,7 +26,8 @@ h1, h2, h3, p {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: 0.2em;
 }
 
 /* Custom Button Styles */
@@ -52,14 +48,14 @@ h1, h2, h3, p {
 .btn-light {
     border-radius: 0;
     color: #333;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.8);
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
     color: #333;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgb(255,255,255);
 }
 
 /* Custom Horizontal Rule */
@@ -100,12 +96,6 @@ hr.small {
 
 #aboutMeText {
   font-size: 36px;
-  /* background: #fffcdc;
-  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
-  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: linear-gradient(to left, #d9a7c7, #fffcdc);
-  // @include linear-gradient(#d9a7c7, #fffcdc); */
   background: #ec6ead;
   background: -webkit-linear-gradient(to left, #3494e6, #ec6ead); /
   background: -o-linear-gradient(to left, #3494e6, #ec6ead);
@@ -174,12 +164,6 @@ hr.small {
 
 #whoiamtext {
   font-size: 36px;
-  /* background: #fffcdc;
-  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
-  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: linear-gradient(to left, #d9a7c7, #fffcdc);
-  // @include linear-gradient(#d9a7c7, #fffcdc); */
   background: #ec6ead;
   background: -webkit-linear-gradient(to left, #3494e6, #ec6ead); /
   background: -o-linear-gradient(to left, #3494e6, #ec6ead);
@@ -200,12 +184,6 @@ hr.small {
 
 #whoiam2 {
   /*height: 75%;*/
-  /* background: #fffcdc;
-  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
-  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: linear-gradient(to left, #d9a7c7, #fffcdc);
-  // @include linear-gradient(#d9a7c7, #fffcdc); */
   background: #ec6ead;
   background: -webkit-linear-gradient(to left, #3494e6, #ec6ead); /
   background: -o-linear-gradient(to left, #3494e6, #ec6ead);
@@ -241,12 +219,6 @@ hr.small {
 
 .spaceDivide {
   height: 300px;
-  /* background: #fffcdc;
-  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
-  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: linear-gradient(to left, #d9a7c7, #fffcdc);
-  // @include linear-gradient(#d9a7c7, #fffcdc); */
   background: #ec6ead;
   background: -webkit-linear-gradient(to left, #3494e6, #ec6ead); /
   background: -o-linear-gradient(to left, #3494e6, #ec6ead);
@@ -259,12 +231,6 @@ hr.small {
 /*Skills*/
 
 #skills {
-  /* background: #fffcdc;
-  background: -webkit-linear-gradient(to left, #d9a7c7, #fffcdc); /
-  background: -o-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: -moz-linear-gradient(to left, #d9a7c7, #fffcdc);
-  background: linear-gradient(to left, #d9a7c7, #fffcdc);
-  // @include linear-gradient(#d9a7c7, #fffcdc); */
   background: #ec6ead;
   background: -webkit-linear-gradient(to left, #3494e6, #ec6ead); /
   background: -o-linear-gradient(to left, #3494e6, #ec6ead);

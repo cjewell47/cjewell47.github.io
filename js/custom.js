@@ -1,18 +1,5 @@
+
 $(() => {
-
-
-
-  // Closes the sidebar menu
-  $('#menu-close').click(function(e) {
-    e.preventDefault();
-    $('#sidebar-wrapper').toggleClass('active');
-  });
-
-  // Opens the sidebar menu
-  $('#menu-toggle').click(function(e) {
-    e.preventDefault();
-    $('#sidebar-wrapper').toggleClass('active');
-  });
 
   // Scrolls to the selected menu item on the page
   $(function() {
@@ -209,14 +196,6 @@ $(() => {
     const degree = count % 360;
 
     $('.header').css(
-      // 'background',
-      // '-webkit-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
-      // 'background',
-      // '-o-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
-      // 'background',
-      // '-moz-linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)',
-      // 'background',
-      // 'linear-gradient(' + degree + 'deg, #d9a7c7, #fffcdc)'
       'background',
       '-webkit-linear-gradient(' + degree + 'deg, #3494e6, #ec6ead)',
       'background',
