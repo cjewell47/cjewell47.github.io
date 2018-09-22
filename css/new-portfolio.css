@@ -66,25 +66,26 @@ h1 {
 .header-item::after {
   transform: rotate(-45deg);
   opacity: 0;
+}
+
+.header-item:hover::after, .header-item.active::after {
+  opacity: 1;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
 }
 
-.header-item:hover::after, .header-item.active::after {
-  opacity: 1;
-}
-
 .header-item p {
   transform: rotate(45deg);
   color: #fff;
+  font-style: normal;
 }
 
 .header-item:hover p, .header-item.active p {
   opacity: 0;
-  transition: opacity .1s ease-in-out;
-  -moz-transition: opacity .1s ease-in-out;
-  -webkit-transition: opacity .1s ease-in-out;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
 
 /* MAIN CONTENT */
