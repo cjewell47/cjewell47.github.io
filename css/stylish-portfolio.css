@@ -2,6 +2,19 @@
 
 /* Global Styles */
 
+/* {% include header.html %}
+{% include about.html %}
+{% include services.html %}
+{% include space.html %}
+{% include whoiam.html %}
+{% include whoiam2.html %}
+{% include space2.html %}
+{% include skills.html %}
+{% include space2.html %}
+{% include portfolio.html %}
+{% include space.html %}
+{% include contact.html %} */
+
 html,
 body {
     width: 100%;
@@ -10,6 +23,8 @@ body {
 
 body {
     font-family: 'Comfortaa', cursive;
+    /* font-family: 'futura', sans-serif; */
+    /* font-style: italic; */
 }
 
 h1, h2, h3, p {

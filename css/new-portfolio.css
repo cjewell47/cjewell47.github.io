@@ -1,0 +1,77 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'futura', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 40px;
+}
+
+.header-container {
+  width: 100%;
+  text-align: center;
+}
+
+.items-container {
+  display: flex;
+  margin: auto;
+  width: 75%;
+  min-width: 500px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.header-item {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-item::before,
+.header-item::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
+
+.header-item::before {
+  transform: rotate(45deg);
+}
+
+.header-item::after {
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.header-item:hover::after {
+  opacity: 1;
+}
+
+.header-item p {
+  transform: rotate(45deg);
+  color: #fff;
+}
+
+.header-item:hover p {
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -webkit-transition: opacity .1s ease-in-out;
+}
