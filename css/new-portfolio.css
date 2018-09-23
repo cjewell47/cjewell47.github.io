@@ -38,6 +38,16 @@ h1 {
   justify-content: space-evenly;
 }
 
+.header-container .items-container .header-item.hidden {
+  display: none;
+}
+
+.header-container .items-container h1 {
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
 .header-item {
   position: relative;
   height: 120px;
@@ -109,6 +119,22 @@ h1 {
 
 .main-content .content.current {
   display: flex;
+}
+
+.main-content .content.default {
+  background: none;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.main-content .content.default .items-container {
+  width: 100%;
+}
+
+.main-content .content.default .header-item {
+  text-align: center;
+  height: 170px;
+  width: 170px;
 }
 
 .main-content .h2-container {
