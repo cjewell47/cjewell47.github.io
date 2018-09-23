@@ -9,9 +9,9 @@ body {
   font-family: 'futura', sans-serif;
   font-style: italic;
   font-weight: 300;
-  background: #C6FFDD;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #C6FFDD;
+  background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+  background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
 
 }
 
@@ -33,6 +33,7 @@ h1 {
   margin: auto;
   width: 75%;
   min-width: 500px;
+  max-width: 1050px;
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -56,7 +57,7 @@ h1 {
   content: '';
   width: 100%;
   height: 20px;
-  background-color: black;
+  background-color: #000;
 }
 
 .header-item::before {
@@ -68,7 +69,8 @@ h1 {
   opacity: 0;
 }
 
-.header-item:hover::after, .header-item.active::after {
+.header-item:hover::after,
+.header-item.current::after {
   opacity: 1;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
@@ -81,7 +83,8 @@ h1 {
   font-style: normal;
 }
 
-.header-item:hover p, .header-item.active p {
+.header-item:hover p,
+.header-item.current p {
   opacity: 0;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
@@ -92,23 +95,28 @@ h1 {
 
 .main-content {
   margin: auto;
-  max-width: 80%;
+  max-width: 1050px;
 }
 
 .main-content .content {
-  /* position: absolute; */
-  width: 450px;
-  height: 450px;
-  background-color: rgba(255,255,255,1);
+  width: 700px;
+  height: auto;
+  background-color: rgba(255,255,255,0.7);
   margin: auto;
   margin-top: 55px;
   display: none;
 }
 
-.main-content .content.skills {
-  width: 600px;
+.main-content .content.current {
+  display: flex;
 }
 
-.main-content .content.active {
-  display: flex;
+.main-content .h2-container {
+  padding-top: 20px;
+}
+
+.main-content .h2-container h2 {
+  transform: rotate(270deg);
+  color: #565657;
+  text-decoration: underline;
 }

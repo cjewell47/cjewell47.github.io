@@ -1,12 +1,12 @@
-$(() => {
+$(function() {
 
   $('.header-item').click(function() {
-    $('.header-item.active').removeClass('active');
-    $(this).addClass('active');
+    $('.header-item.current').removeClass('current');
+    $(this).addClass('current');
     var clicked = $(this).attr('data-val');
-    if (!$('.content.active').hasClass(clicked)) {
-      $('.content.active').removeClass('active');
-      $('.content.' + clicked).addClass('active');
+    if (!$('.content.current').hasClass(clicked)) {
+      $('.content.current').removeClass('current');
+      $('.content.' + clicked).addClass('current');
     }
   });
 
