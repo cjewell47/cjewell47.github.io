@@ -20,7 +20,6 @@ body {
 h1 {
   font-size: 48px;
   margin: auto;
-  margin-top: 40px;
 }
 
 .header-container {
@@ -44,9 +43,9 @@ h1 {
   flex-direction: row;
   justify-content: space-evenly;
   width: 600px;
-  transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -webkit-transition: all .25s ease-in-out;
+  transition: all .55s ease-in-out;
+  -moz-transition: all .55s ease-in-out;
+  -webkit-transition: all .55s ease-in-out;
 }
 
 .header-items-container.out {
@@ -62,11 +61,12 @@ h1 {
 .header-item {
   opacity: 1;
   position: relative;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 10px 0;
   transition: all .75s ease-in-out;
   -moz-transition: all .75s ease-in-out;
   -webkit-transition: all .75s ease-in-out;
@@ -87,37 +87,38 @@ h1 {
   width: 100%;
   height: 20px;
   background-color: #000;
+  transform: rotate(90deg);
+  transition: transform .45s ease-in-out;
+  -moz-transition: transform .45s ease-in-out;
+  -webkit-transition: transform .45s ease-in-out;
 }
 
-.header-item::before {
+.header-item:hover::before,
+.header-item.current::before {
   transform: rotate(45deg);
-}
-
-.header-item::after {
-  transform: rotate(-45deg);
-  opacity: 0;
 }
 
 .header-item:hover::after,
 .header-item.current::after {
-  opacity: 1;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  transform: rotate(135deg);
 }
 
+
 .header-item p {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
   color: #fff;
-  font-style: normal;
+  font-style: italic;
+  z-index: 100;
+  letter-spacing: 1px;
+  transition: all .55s ease-in-out;
+  -moz-transition: all .55s ease-in-out;
+  -webkit-transition: all .55s ease-in-out;
 }
 
 .header-item:hover p,
 .header-item.current p {
   opacity: 0;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  transform: rotate(45deg);
 }
 
 /* MAIN CONTENT */
@@ -152,8 +153,34 @@ h1 {
 
 .main-content .content.default .header-item {
   text-align: center;
-  height: 170px;
-  width: 170px;
+  height: 125px;
+  width: 125px;
+}
+
+.main-content .content.default .header-item::before,
+.main-content .content.default .header-item::after {
+  transform: rotate(0deg);
+}
+
+.main-content .content.default .header-item:hover::before,
+.main-content .content.default .header-item.current::before {
+  transform: rotate(45deg);
+}
+
+.main-content .content.default .header-item:hover::after,
+.main-content .content.default .header-item.current::after {
+  transform: rotate(-45deg);
+}
+
+.main-content .content.default .header-item p {
+  transform: rotate(0deg);
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.main-content .content.default .header-item.current p,
+.main-content .content.default .header-item:hover p {
+  transform: rotate(45deg);
 }
 
 .main-content .h2-container {
