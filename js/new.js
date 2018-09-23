@@ -12,6 +12,7 @@ $(function() {
 
   $('.content.default .header-item').click(function() {
     $('.header-item.hidden').removeClass('hidden');
+    $('.header-items-container.out').removeClass('out');
     var clicked1 = $(this).attr('data-val');
     $('.header-item.' + clicked1).addClass('current');
     console.log($('.header-item.' + clicked1));

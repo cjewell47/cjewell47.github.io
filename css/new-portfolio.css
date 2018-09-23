@@ -19,6 +19,7 @@ body {
 
 h1 {
   font-size: 48px;
+  margin: auto;
   margin-top: 40px;
 }
 
@@ -38,23 +39,41 @@ h1 {
   justify-content: space-evenly;
 }
 
-.header-container .items-container .header-item.hidden {
-  display: none;
-}
-
-.header-container .items-container h1 {
+.header-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 600px;
   transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
 }
 
+.header-items-container.out {
+  width: 0;
+}
+
+.header-container .items-container h1 {
+  transition: all .55s ease-in-out;
+  -moz-transition: all .55s ease-in-out;
+  -webkit-transition: all .55s ease-in-out;
+}
+
 .header-item {
+  opacity: 1;
   position: relative;
   height: 120px;
   width: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all .75s ease-in-out;
+  -moz-transition: all .75s ease-in-out;
+  -webkit-transition: all .75s ease-in-out;
+}
+
+.header-container .items-container .header-item.hidden {
+  opacity: 0;
 }
 
 .header-item:hover {
@@ -128,7 +147,7 @@ h1 {
 }
 
 .main-content .content.default .items-container {
-  width: 100%;
+  width: 80%;
 }
 
 .main-content .content.default .header-item {
