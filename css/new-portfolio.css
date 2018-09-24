@@ -110,9 +110,9 @@ h1 {
   font-style: italic;
   z-index: 100;
   letter-spacing: 1px;
-  transition: all .55s ease-in-out;
-  -moz-transition: all .55s ease-in-out;
-  -webkit-transition: all .55s ease-in-out;
+  transition: all .45s ease-in-out;
+  -moz-transition: all .45s ease-in-out;
+  -webkit-transition: all .45s ease-in-out;
 }
 
 .header-item:hover p,
@@ -134,11 +134,19 @@ h1 {
   background-color: rgba(255,255,255,0.7);
   margin: auto;
   margin-top: 55px;
+  opacity: 1;
   display: none;
+  transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
 }
 
 .main-content .content.current {
   display: flex;
+}
+
+.main-content .content.hidden {
+  opacity: 0;
 }
 
 .main-content .content.default {
