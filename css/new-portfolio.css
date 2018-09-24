@@ -200,3 +200,39 @@ h1 {
   color: #565657;
   text-decoration: underline;
 }
+
+.main-content .skills {
+  width: 600px;
+  transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+.content.skills .accordion {
+  list-style: none;
+  padding: 0;
+  width: 500px;
+  margin: auto;
+}
+
+.content.skills .accordion .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+
+.content.skills .accordion li {
+  margin: .5em 0;
+}
+
+.content.skills .accordion a.toggle {
+  display: block;
+  background: #000;
+  color: #fff;
+  padding: .75em;
+  transition: background .3s ease;
+}
+
+.content.skills .accordion a.toggle:hover {
+  background: #565657;
+}
