@@ -276,17 +276,17 @@ h1 {
 }
 
 .content.skills .accordion a.toggle:hover {
-  background: #3a3a3a;
-  transform: skew(-6deg);
-  /* animation-name: tile;
+  /* background: #3a3a3a; */
+  /* transform: skew(-6deg); */
+  animation-name: tile;
   animation-duration: 0.5s;
   -webkit-animation-name: tile;
   -webkit-animation-duration: 0.5s;
   -moz-animation-name: tile;
-  -moz-animation-duration: 0.5s; */
+  -moz-animation-duration: 0.5s;
 }
 
-/* @keyframes tile {
+@keyframes tile {
   0% {transform: skew(0deg);}
   17% {transform: skew(-4deg);}
   34% {transform: skew(-8deg);}
@@ -314,7 +314,7 @@ h1 {
   68% {transform: skew(0deg);}
   85% {transform: skew(4deg);}
   100% {transform: skew(0deg);}
-} */
+}
 
 @keyframes mainBefore {
   0% {transform: rotate(0deg);}
