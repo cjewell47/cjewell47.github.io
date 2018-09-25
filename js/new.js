@@ -31,12 +31,15 @@ $(function() {
 
     if ($this.next().hasClass('show')) {
       $this.next().removeClass('show');
-      $this.next().slideUp(350);
+      $this.next().slideUp(450);
+      $this.removeClass('open');
     } else {
       $this.parent().parent().find('li .inner').removeClass('show');
+      $('a.toggle.open').removeClass('open');
       $this.parent().parent().find('li .inner').slideUp(350);
       $this.next().toggleClass('show');
-      $this.next().slideToggle(350);
+      $this.next().slideToggle(450);
+      $this.toggleClass('open');
     }
   });
 
