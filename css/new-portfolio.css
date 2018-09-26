@@ -233,7 +233,7 @@ h1 {
 }
 
 .main-content .h2-container {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .main-content .h2-container h2 {
@@ -300,6 +300,46 @@ h1 {
   -webkit-animation-duration: 0.5s;
   -moz-animation-name: tile;
   -moz-animation-duration: 0.5s;
+}
+
+.content.work {
+  width: auto;
+}
+
+.content.work .projects-container {
+  margin: 20px auto;
+  width:900px;
+  height:600px;
+  display:grid;
+  grid-template-columns: 440px 500px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.content.work .image-box {
+  padding:20px;
+  border-radius:10px;
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.content.work .image-box .img-portfolio {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.content.work .image-box .img-portfolio[class*="img-2-"] {
+  opacity: 0;
+}
+
+.content.work .image-box .img-portfolio[class*="img-2-"]:hover {
+  opacity: 1;
 }
 
 @keyframes tile {
