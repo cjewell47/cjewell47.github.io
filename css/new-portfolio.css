@@ -304,6 +304,11 @@ h1 {
 
 .content.work {
   width: auto;
+  padding-right: 30px;
+}
+
+.content.work .h2-container {
+  padding-top: 50px;
 }
 
 .content.work .projects-container {
@@ -318,7 +323,7 @@ h1 {
 }
 
 .content.work .image-box {
-  padding:20px;
+  /* padding:20px; */
   border-radius:10px;
   position: relative;
   display:flex;
@@ -329,17 +334,52 @@ h1 {
 .content.work .image-box .img-portfolio {
   width: 400px;
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
 }
 
 .content.work .image-box .img-portfolio[class*="img-2-"] {
   opacity: 0;
 }
 
-.content.work .image-box .img-portfolio[class*="img-2-"]:hover {
+.content.work .image-box:hover > .img-portfolio[class*="img-2-"] {
   opacity: 1;
+}
+
+.content.work .image-box .project-link {
+  width: 200px;
+  height: 45px;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+  /* -webkit-box-shadow: 2px 2px 1px 0px rgba(27,27,27,1);
+  -moz-box-shadow: 2px 2px 1px 0px rgba(27,27,27,1);
+  box-shadow: 2px 2px 1px 0px rgba(27,27,27,1); */
+  top: 235px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+
+.content.work .image-box .project-link p {
+  margin-top: 11px;
+}
+
+.content.work .image-box .project-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content.work .image-box .img-portfolio[class*="img-2-"]:hover ~ .project-link, .content.work .image-box .project-link:hover {
+  opacity: 1;
+  top: 150px;
+  /* cursor: pointer; */
 }
 
 @keyframes tile {
