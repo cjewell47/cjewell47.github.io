@@ -101,23 +101,23 @@ h1 {
 .header-item:hover::before,
 .header-item.current::before {
   transform: rotate(45deg);
-  animation-name: headerBefore;
+  /* animation-name: headerBefore;
   animation-duration: 0.5s;
   -webkit-animation-name: headerBefore;
   -webkit-animation-duration: 0.5s;
   -moz-animation-name: headerBefore;
-  -moz-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s; */
 }
 
 .header-item:hover::after,
 .header-item.current::after {
   transform: rotate(135deg);
-  animation-name: headerAfter;
+  /* animation-name: headerAfter;
   animation-duration: 0.5s;
   -webkit-animation-name: headerAfter;
   -webkit-animation-duration: 0.5s;
   -moz-animation-name: headerAfter;
-  -moz-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s; */
 }
 
 
