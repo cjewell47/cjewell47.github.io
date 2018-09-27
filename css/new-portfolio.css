@@ -292,8 +292,6 @@ h1 {
 }
 
 .content.skills .accordion a.toggle:hover {
-  /* background: #3a3a3a; */
-  /* transform: skew(-6deg); */
   animation-name: tile;
   animation-duration: 0.5s;
   -webkit-animation-name: tile;
@@ -323,7 +321,6 @@ h1 {
 }
 
 .content.work .image-box {
-  /* padding:20px; */
   border-radius:10px;
   position: relative;
   display:flex;
@@ -357,9 +354,6 @@ h1 {
   position: absolute;
   text-align: center;
   z-index: 999;
-  /* -webkit-box-shadow: 2px 2px 1px 0px rgba(27,27,27,1);
-  -moz-box-shadow: 2px 2px 1px 0px rgba(27,27,27,1);
-  box-shadow: 2px 2px 1px 0px rgba(27,27,27,1); */
   top: 235px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
@@ -374,6 +368,10 @@ h1 {
 .content.work .image-box .project-link a {
   color: #fff;
   text-decoration: none;
+}
+
+.content.work .image-box .project-link a:hover {
+  text-decoration: underline;
 }
 
 .content.work .image-box .img-portfolio[class*="img-2-"]:hover ~ .project-link, .content.work .image-box .project-link:hover {
