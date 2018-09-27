@@ -136,12 +136,12 @@ h1 {
 .header-item.current p {
   opacity: 0;
   transform: rotate(45deg);
-  animation-name: headerBefore;
+  /* animation-name: headerBefore;
   animation-duration: 0.5s;
   -webkit-animation-name: headerBefore;
   -webkit-animation-duration: 0.5s;
   -moz-animation-name: headerBefore;
-  -moz-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s; */
 }
 
 /* MAIN CONTENT */
@@ -196,23 +196,23 @@ h1 {
 .main-content .content.default .header-item:hover::before,
 .main-content .content.default .header-item.current::before {
   transform: rotate(45deg);
-  animation-name: mainBefore;
+  /* animation-name: mainBefore;
   animation-duration: 0.5s;
   -webkit-animation-name: mainBefore;
   -webkit-animation-duration: 0.5s;
   -moz-animation-name: mainBefore;
-  -moz-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s; */
 }
 
 .main-content .content.default .header-item:hover::after,
 .main-content .content.default .header-item.current::after {
   transform: rotate(-45deg);
-  animation-name: mainAfter;
+  /* animation-name: mainAfter;
   animation-duration: 0.5s;
   -webkit-animation-name: mainAfter;
   -webkit-animation-duration: 0.5s;
   -moz-animation-name: mainAfter;
-  -moz-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s; */
 }
 
 .main-content .content.default .header-item p {
@@ -224,12 +224,12 @@ h1 {
 .main-content .content.default .header-item.current p,
 .main-content .content.default .header-item:hover p {
   transform: rotate(45deg);
-  animation-name: mainBefore;
+  /* animation-name: mainBefore;
   animation-duration: 0.5s;
   -webkit-animation-name: mainBefore;
   -webkit-animation-duration: 0.5s;
   -moz-animation-name: mainBefore;
-  -moz-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s; */
 }
 
 .main-content .h2-container {
@@ -409,7 +409,7 @@ h1 {
   85% {transform: skew(4deg);}
   100% {transform: skew(0deg);}
 }
-
+/* 
 @keyframes mainBefore {
   0% {transform: rotate(0deg);}
   17% {transform: rotate(12deg);}
@@ -528,7 +528,7 @@ h1 {
   68% {transform: rotate(135deg);}
   85% {transform: rotate(140deg);}
   100% {transform: rotate(135deg);}
-}
+} */
 
 @keyframes headerActive {
   0% {transform: rotate(0deg);}
