@@ -101,23 +101,11 @@ h1 {
 .header-item:hover::before,
 .header-item.current::before {
   transform: rotate(45deg);
-  /* animation-name: headerBefore;
-  animation-duration: 0.5s;
-  -webkit-animation-name: headerBefore;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-name: headerBefore;
-  -moz-animation-duration: 0.5s; */
 }
 
 .header-item:hover::after,
 .header-item.current::after {
   transform: rotate(135deg);
-  /* animation-name: headerAfter;
-  animation-duration: 0.5s;
-  -webkit-animation-name: headerAfter;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-name: headerAfter;
-  -moz-animation-duration: 0.5s; */
 }
 
 
@@ -136,12 +124,6 @@ h1 {
 .header-item.current p {
   opacity: 0;
   transform: rotate(45deg);
-  /* animation-name: headerBefore;
-  animation-duration: 0.5s;
-  -webkit-animation-name: headerBefore;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-name: headerBefore;
-  -moz-animation-duration: 0.5s; */
 }
 
 /* MAIN CONTENT */
@@ -196,23 +178,11 @@ h1 {
 .main-content .content.default .header-item:hover::before,
 .main-content .content.default .header-item.current::before {
   transform: rotate(45deg);
-  /* animation-name: mainBefore;
-  animation-duration: 0.5s;
-  -webkit-animation-name: mainBefore;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-name: mainBefore;
-  -moz-animation-duration: 0.5s; */
 }
 
 .main-content .content.default .header-item:hover::after,
 .main-content .content.default .header-item.current::after {
   transform: rotate(-45deg);
-  /* animation-name: mainAfter;
-  animation-duration: 0.5s;
-  -webkit-animation-name: mainAfter;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-name: mainAfter;
-  -moz-animation-duration: 0.5s; */
 }
 
 .main-content .content.default .header-item p {
@@ -224,12 +194,6 @@ h1 {
 .main-content .content.default .header-item.current p,
 .main-content .content.default .header-item:hover p {
   transform: rotate(45deg);
-  /* animation-name: mainBefore;
-  animation-duration: 0.5s;
-  -webkit-animation-name: mainBefore;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-name: mainBefore;
-  -moz-animation-duration: 0.5s; */
 }
 
 .main-content .h2-container {
@@ -382,153 +346,33 @@ h1 {
 
 @keyframes tile {
   0% {transform: skew(0deg);}
-  17% {transform: skew(-4deg);}
-  34% {transform: skew(-8deg);}
-  51% {transform: skew(-4deg);}
+  17% {transform: skew(-5deg);}
+  34% {transform: skew(-10deg);}
+  51% {transform: skew(-5deg);}
   68% {transform: skew(0deg);}
-  85% {transform: skew(4deg);}
+  85% {transform: skew(5deg);}
   100% {transform: skew(0deg);}
 }
 
 @-webkit-keyframes tile {
   0% {transform: skew(0deg);}
-  17% {transform: skew(-4deg);}
-  34% {transform: skew(-8deg);}
-  51% {transform: skew(-4deg);}
+  17% {transform: skew(-5deg);}
+  34% {transform: skew(-10deg);}
+  51% {transform: skew(-5deg);}
   68% {transform: skew(0deg);}
-  85% {transform: skew(4deg);}
+  85% {transform: skew(5deg);}
   100% {transform: skew(0deg);}
 }
 
 @-moz-keyframes tile {
   0% {transform: skew(0deg);}
-  17% {transform: skew(-4deg);}
-  34% {transform: skew(-8deg);}
-  51% {transform: skew(-4deg);}
+  17% {transform: skew(-5deg);}
+  34% {transform: skew(-10deg);}
+  51% {transform: skew(-5deg);}
   68% {transform: skew(0deg);}
-  85% {transform: skew(4deg);}
+  85% {transform: skew(5deg);}
   100% {transform: skew(0deg);}
 }
-/* 
-@keyframes mainBefore {
-  0% {transform: rotate(0deg);}
-  17% {transform: rotate(12deg);}
-  34% {transform: rotate(24deg);}
-  51% {transform: rotate(36deg);}
-  68% {transform: rotate(45deg);}
-  85% {transform: rotate(50deg);}
-  100% {transform: rotate(45deg);}
-}
-
-@-webkit-keyframes mainBefore {
-  0% {transform: rotate(0deg);}
-  17% {transform: rotate(12deg);}
-  34% {transform: rotate(24deg);}
-  51% {transform: rotate(36deg);}
-  68% {transform: rotate(45deg);}
-  85% {transform: rotate(50deg);}
-  100% {transform: rotate(45deg);}
-}
-
-@-moz-keyframes mainBefore {
-  0% {transform: rotate(0deg);}
-  17% {transform: rotate(12deg);}
-  34% {transform: rotate(24deg);}
-  51% {transform: rotate(36deg);}
-  68% {transform: rotate(45deg);}
-  85% {transform: rotate(50deg);}
-  100% {transform: rotate(45deg);}
-}
-
-@keyframes mainAfter {
-  0% {transform: rotate(0deg);}
-  17% {transform: rotate(-12deg);}
-  34% {transform: rotate(-24deg);}
-  51% {transform: rotate(-36deg);}
-  68% {transform: rotate(-45deg);}
-  85% {transform: rotate(-50deg);}
-  100% {transform: rotate(-45deg);}
-}
-
-@-webkit-keyframes mainAfter {
-  0% {transform: rotate(0deg);}
-  17% {transform: rotate(-12deg);}
-  34% {transform: rotate(-24deg);}
-  51% {transform: rotate(-36deg);}
-  68% {transform: rotate(-45deg);}
-  85% {transform: rotate(-50deg);}
-  100% {transform: rotate(-45deg);}
-}
-
-@-moz-keyframes mainAfter {
-  0% {transform: rotate(0deg);}
-  17% {transform: rotate(-12deg);}
-  34% {transform: rotate(-24deg);}
-  51% {transform: rotate(-36deg);}
-  68% {transform: rotate(-45deg);}
-  85% {transform: rotate(-50deg);}
-  100% {transform: rotate(-45deg);}
-}
-
-@keyframes headerBefore {
-  0% {transform: rotate(90deg);}
-  17% {transform: rotate(78deg);}
-  34% {transform: rotate(66deg);}
-  51% {transform: rotate(54deg);}
-  68% {transform: rotate(45deg);}
-  85% {transform: rotate(40deg);}
-  100% {transform: rotate(45deg);}
-}
-
-@-webkit-keyframes headerBefore {
-  0% {transform: rotate(90deg);}
-  17% {transform: rotate(78deg);}
-  34% {transform: rotate(66deg);}
-  51% {transform: rotate(54deg);}
-  68% {transform: rotate(45deg);}
-  85% {transform: rotate(40deg);}
-  100% {transform: rotate(45deg);}
-}
-
-@-moz-keyframes headerBefore {
-  0% {transform: rotate(90deg);}
-  17% {transform: rotate(78deg);}
-  34% {transform: rotate(66deg);}
-  51% {transform: rotate(54deg);}
-  68% {transform: rotate(45deg);}
-  85% {transform: rotate(40deg);}
-  100% {transform: rotate(45deg);}
-}
-
-@keyframes headerAfter {
-  0% {transform: rotate(90deg);}
-  17% {transform: rotate(102deg);}
-  34% {transform: rotate(114deg);}
-  51% {transform: rotate(126deg);}
-  68% {transform: rotate(135deg);}
-  85% {transform: rotate(140deg);}
-  100% {transform: rotate(135deg);}
-}
-
-@-webkit-keyframes headerAfter {
-  0% {transform: rotate(90deg);}
-  17% {transform: rotate(102deg);}
-  34% {transform: rotate(114deg);}
-  51% {transform: rotate(126deg);}
-  68% {transform: rotate(135deg);}
-  85% {transform: rotate(140deg);}
-  100% {transform: rotate(135deg);}
-}
-
-@-moz-keyframes headerAfter {
-  0% {transform: rotate(90deg);}
-  17% {transform: rotate(102deg);}
-  34% {transform: rotate(114deg);}
-  51% {transform: rotate(126deg);}
-  68% {transform: rotate(135deg);}
-  85% {transform: rotate(140deg);}
-  100% {transform: rotate(135deg);}
-} */
 
 @keyframes headerActive {
   0% {transform: rotate(0deg);}
