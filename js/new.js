@@ -43,4 +43,8 @@ $(function() {
     }
   });
 
+  $('.mobile-menu-container').click(function() {
+    $(this).toggleClass('change')
+  })
+
 });
