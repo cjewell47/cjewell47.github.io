@@ -497,6 +497,7 @@ h1 {
   }
 
   .change .bar1 {
+    margin-right: 1px;
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     -moz-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px) ;
@@ -507,6 +508,7 @@ h1 {
   }
 
   .change .bar3 {
+    margin-right: -1px;
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     -moz-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
