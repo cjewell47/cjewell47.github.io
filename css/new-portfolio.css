@@ -453,11 +453,7 @@ h1 {
 
 /* MOBILE */
 
-.mobile-menu-container {
-  display: none;
-}
-
-.main-content-mob {
+.main-content-mob, .mob-menu, .mobile-menu-container {
   display: none;
 }
 
@@ -525,6 +521,7 @@ h1 {
   }
 
   .mob-menu {
+    display: block;
     opacity: 1;
     background-color: #fff;
     position: fixed;

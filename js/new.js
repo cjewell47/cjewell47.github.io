@@ -4,7 +4,9 @@ $(function() {
     $('.header-item.current').removeClass('current');
     $(this).addClass('current');
     var clicked = $(this).attr('data-val');
-    if (!$('.content.current').hasClass(clicked)) {
+    $('.mob-menu li.active').removeClass('active');
+    $('.mob-menu li.mob-' + clicked).addClass('active');
+    if (!$('.main-content .content.current').hasClass(clicked)) {
       $('.content.current').addClass('hidden');
       setTimeout(function() {
         $('.content.current').removeClass('current');
@@ -49,17 +51,21 @@ $(function() {
   });
 
   $('.mob-menu li').click(function() {
+    $('.header-items-container.out').removeClass('out');
+    $('.header-item.hidden').removeClass('hidden');
     if (!$(this).hasClass('active')) {
       $('.mob-menu li.active').removeClass('active');
       $(this).addClass('active');
-      var clicked = $(this).attr('data-val');
-      if (!$('.content.current').hasClass(clicked)) {
+      var clicked2 = $(this).attr('data-val');
+      $('.header-item.current').removeClass('current');
+      $('.header-item.' + clicked2).addClass('current');
+      if (!$('.content.current').hasClass(clicked2)) {
         $('.content.current').addClass('hidden');
         setTimeout(function() {
           $('.content.current').removeClass('current');
-          $('.content.' + clicked).addClass('current');
+          $('.content.' + clicked2).addClass('current');
           setTimeout(function() {
-            $('.content.hidden.' + clicked).removeClass('hidden');
+            $('.content.hidden.' + clicked2).removeClass('hidden');
           },350);
         },350);
       }
