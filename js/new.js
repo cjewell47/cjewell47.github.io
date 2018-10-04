@@ -54,6 +54,8 @@ $(function() {
     $('.header-items-container.out').removeClass('out');
     $('.header-item.hidden').removeClass('hidden');
     if (!$(this).hasClass('active')) {
+      $('.mob-menu').addClass('closed');
+      $('.mobile-menu-container').removeClass('change');
       $('.mob-menu li.active').removeClass('active');
       $(this).addClass('active');
       var clicked2 = $(this).attr('data-val');
