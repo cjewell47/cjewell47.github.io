@@ -45,12 +45,12 @@ $(function() {
     }
   });
 
-  $('.mobile-menu-container').click(function() {
+  $('.mobile-menu-container').mousedown(function() {
     $(this).toggleClass('change');
     $('.mob-menu').toggleClass('closed');
   });
 
-  $('.mob-menu li').click(function() {
+  $('.mob-menu li').mousedown(function() {
     $('.header-items-container.out').removeClass('out');
     $('.header-item.hidden').removeClass('hidden');
     if (!$(this).hasClass('active')) {
