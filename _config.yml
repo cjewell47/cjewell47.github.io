@@ -1,13 +1,13 @@
 # Site settings
 title: Charles Jewell
-email: mail@charlesjewell.com
+email: cj@charlesjewell.com
 description: Charles Jewell - Web Developer
-baseurl: "" 
+baseurl: ""
 url: "" # the base hostname & protocol for your site
 
 # User setting
 owner: Charles Jewell
-email: mail@charlesjewell.com
+email: cj@charlesjewell.com
 github_username: cjewell47
 telephone:
 
@@ -16,3 +16,6 @@ google_api_key:
 
 # Build settings
 markdown: kramdown
+
+sass:
+  style: compressed

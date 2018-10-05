@@ -577,4 +577,8 @@ h1 {
   .main-content-mob .content.hidden {
     opacity: 0;
   }
+
+  .main-content-mob .content.skills.current {
+    
+  }
 }
