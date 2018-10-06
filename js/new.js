@@ -74,4 +74,15 @@ $(function() {
     }
   });
 
+  $('.mob-menu .mob-work').one('click', function() {
+    $('.slick-dots li')[0].click();
+  });
+
+  setTimeout(function() {
+    $('.projects-carousel').slick({
+      arrows: false,
+      dots: true
+    });
+  },1200);
+
 });

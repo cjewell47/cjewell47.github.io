@@ -230,10 +230,10 @@ body {
           width:900px;
           height:600px;
           display:grid;
-          grid-template-columns: 440px 500px;
+          grid-template-columns: 1fr 1fr;
           grid-row: auto auto;
-          grid-column-gap: 20px;
-          grid-row-gap: 20px;
+          grid-column-gap: 0;
+          grid-row-gap: 30px;
           .image-box {
             border-radius:10px;
             position: relative;
@@ -337,7 +337,7 @@ body {
   .main-content-mob, .mob-menu, .mobile-menu-container {
     display: none;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     width: 100%;
     .header-container {
       width: 100%;
@@ -424,7 +424,7 @@ body {
       .content {
         max-width: 320px;
         margin-top: 50px;
-        overflow-x: none;
+        overflow-x: hidden;
         opacity: 1;
         display: none;
         transition: all .35s ease-in-out;
@@ -461,7 +461,7 @@ body {
                   border-width: 0 3px 3px 0;
                   display: inline-block;
                   padding: 3px;
-                  margin: 5px 40px 0 0;
+                  margin: 7px 40px 0 0;
                   float: left;
                   transform: rotate(-45deg);
                   transition: all .55s ease-in-out;
@@ -477,6 +477,18 @@ body {
                   -moz-animation-name: tile;
                   -moz-animation-duration: 0.5s;
                 }
+              }
+            }
+          }
+        }
+        &.work {
+          overflow-x: auto;
+          max-width: none;
+          .projects-carousel {
+            [class^="work-item"] {
+              img {
+                max-width: 95%;
+                margin: auto;
               }
             }
           }
