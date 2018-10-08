@@ -309,7 +309,7 @@ body {
             -moz-transition: all .5s ease-in-out;
             -webkit-transition: all .5s ease-in-out;
             &:hover {
-              color: #fff;
+              color: rgba(0,0,0,0.6);
               font-size: 22px;
             }
           }
@@ -525,6 +525,33 @@ body {
                 button {
                   opacity: 0;
                 }
+              }
+            }
+          }
+        }
+        &.contact {
+          margin-top: 90px;
+          #email {
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 25px;
+            display: block;
+          }
+          .icon-list-row {
+            display: flex;
+            flex-direction: column;
+            .icon-cont {
+              display: flex;
+              justify-content: flex-start;
+              margin-bottom: 20px;
+              .contact-links {
+                img {
+                  height: 60px;
+                }
+              }
+              p {
+                margin-left: 25px;
               }
             }
           }
