@@ -178,6 +178,7 @@ body {
         .accordion {
           list-style: none;
           padding: 0;
+          width: 500px;
           margin: auto;
           li {
             margin: .5em 0;
@@ -441,7 +442,6 @@ body {
           .accordion {
             list-style: none;
             padding: 0;
-            width: 500px;
             margin: auto;
             li {
               margin: .5em 0;
@@ -471,14 +471,6 @@ body {
                 &.open .arrow {
                   transform: rotate(45deg);
                 }
-                &:hover {
-                  animation-name: tile;
-                  animation-duration: 0.5s;
-                  -webkit-animation-name: tile;
-                  -webkit-animation-duration: 0.5s;
-                  -moz-animation-name: tile;
-                  -moz-animation-duration: 0.5s;
-                }
               }
             }
           }
@@ -486,11 +478,31 @@ body {
         &.work {
           overflow-x: auto;
           max-width: none;
+          .h2-container {
+            margin: auto;
+            width: 95%;
+          }
           .projects-carousel {
             [class^="work-item"] {
               img {
                 max-width: 95%;
                 margin: auto;
+              }
+              .work-links {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                max-width: 95%;
+                margin: 15px auto;
+                background-color: #000;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+                height: 45px;
+                a {
+                  color: #fff;
+                  text-decoration: none;
+                }
               }
             }
             .slick-dots {
