@@ -186,6 +186,16 @@ body {
               padding-left: 1em;
               overflow: hidden;
               display: none;
+              .skills-cont {
+                  display: grid;
+                  margin: 15px auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  align-items: center;
+                  div {
+                    font-style: normal;
+                    margin: 3px;
+                  }
+              }
             }
             a.toggle {
               display: block;
@@ -451,6 +461,16 @@ body {
                 padding-left: 1em;
                 overflow: hidden;
                 display: none;
+                .skills-cont {
+                    display: grid;
+                    margin: 15px auto;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    align-items: center;
+                    div {
+                      font-style: normal;
+                      margin: 3px;
+                    }
+                }
               }
               a.toggle {
                 display: block;
@@ -509,7 +529,7 @@ body {
             }
             .slick-dots {
               list-style: none;
-              display: flex;
+              display: flex !important;
               padding: 0;
               justify-content: space-evenly;
               width: 50%;
