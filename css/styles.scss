@@ -230,6 +230,11 @@ body {
           }
         }
       }
+      &.about {
+        .bio {
+          margin: 18px;
+        }
+      }
       &.work {
         width: auto;
         max-width: 950px;
