@@ -28,9 +28,29 @@ body {
     h1 {
       font-size: 48px;
       margin: auto;
+      position: relative;
       transition: all .55s ease-in-out;
       -moz-transition: all .55s ease-in-out;
       -webkit-transition: all .55s ease-in-out;
+      color: transparent;
+      &:focus {
+        outline: none;
+      }
+      &::before, &::after {
+        content: attr(data-section);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &::before {
+        color: #000;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
+      }
+      &::after {
+        color: #1a1a1a;
+        clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
+        animation: slide 4s infinite;
+      }
     }
     .header-items-container {
       display: flex;
@@ -123,6 +143,32 @@ body {
       -webkit-transition: all .35s ease-in-out;
       &.current {
         display: flex;
+        h1 {
+          font-size: 88px;
+          transform: rotate(-90deg);
+          z-index: 0;
+          position: absolute;
+          left: 0;
+          color: transparent;
+          &:focus {
+            outline: none;
+          }
+          &::before, &::after {
+            content: attr(data-section);
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          &::before {
+            color: #000;
+            clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
+          }
+          &::after {
+            color: #1a1a1a;
+            clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
+            animation: slide 3.5s infinite;
+          }
+        }
       }
       &.hidden {
         opacity: 0;
@@ -161,14 +207,6 @@ body {
           }
         }
       }
-      .h2-container {
-        padding-top: 30px;
-        h2 {
-          transform: rotate(270deg);
-          color: #3a3a3a;
-          text-decoration: underline;
-        }
-      }
       &.skills {
         background: none;
         width: 600px;
@@ -187,14 +225,14 @@ body {
               overflow: hidden;
               display: none;
               .skills-cont {
-                  display: grid;
-                  margin: 15px auto;
-                  grid-template-columns: 1fr 1fr 1fr;
-                  align-items: center;
-                  div {
-                    font-style: normal;
-                    margin: 3px;
-                  }
+                display: grid;
+                margin: 15px auto;
+                grid-template-columns: 1fr 1fr 1fr;
+                align-items: center;
+                div {
+                  font-style: normal;
+                  margin: 3px;
+                }
               }
             }
             a.toggle {
@@ -236,19 +274,17 @@ body {
         }
       }
       &.work {
-        width: 600px;
+        width: 550px;
         transform: rotate(45deg);
         margin-top: 155px;
         margin-bottom: 100px;
-        .h2-container {
-          display: flex;
-          width: 60px;
-          h2 {
-            margin: auto;
-          }
+        h1 {
+          transform: rotate(-90deg);
+          top: 120px;
+          left: -230px;
         }
         .projects-container {
-          margin: 20px;
+          margin: 20px auto;
           width: 500px;
           height:500px;
           display:grid;
@@ -473,14 +509,14 @@ body {
                 overflow: hidden;
                 display: none;
                 .skills-cont {
-                    display: grid;
-                    margin: 15px auto;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    align-items: center;
-                    div {
-                      font-style: normal;
-                      margin: 3px;
-                    }
+                  display: grid;
+                  margin: 15px auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  align-items: center;
+                  div {
+                    font-style: normal;
+                    margin: 3px;
+                  }
                 }
               }
               a.toggle {
@@ -646,4 +682,31 @@ body {
   50% {transform: rotate(6deg);}
   75% {transform: rotate(3deg);}
   100% {transform: rotate(0deg);}
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(-8px, 2%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(-8px, 2%);
+  }
+}
+
+@-moz-keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(-8px, 2%);
+  }
 }
