@@ -236,29 +236,24 @@ body {
         }
       }
       &.work {
-        width: auto;
-        max-width: 950px;
-        padding-right: 30px;
-        .h2-container {
-          padding-top: 50px;
-        }
+        width: 550px;
+        transform: rotate(45deg);
+        margin-top: 155px;
         .projects-container {
           margin: 20px auto;
-          width:900px;
-          height:600px;
+          width: 500px;
+          height:500px;
           display:grid;
           grid-template-columns: 1fr 1fr;
-          grid-row: auto auto;
-          grid-column-gap: 0;
-          grid-row-gap: 30px;
           .image-box {
-            border-radius:10px;
             position: relative;
             display:flex;
             align-items:center;
             justify-content:center;
+            overflow: hidden;
+            object-fit: cover;
             .img-portfolio {
-              width: 400px;
+              height: 250px;
               position: absolute;
               transition: opacity 0.5s ease-in-out;
               -webkit-transition: opacity 0.5s ease-in-out;
@@ -301,6 +296,9 @@ body {
                 opacity: 1;
                 top: 150px;
               }
+            }
+            &:nth-child(2), &:nth-child(3) {
+              transform: rotate(-90deg);
             }
           }
         }
