@@ -236,11 +236,19 @@ body {
         }
       }
       &.work {
-        width: 550px;
+        width: 600px;
         transform: rotate(45deg);
         margin-top: 155px;
+        margin-bottom: 100px;
+        .h2-container {
+          display: flex;
+          width: 60px;
+          h2 {
+            margin: auto;
+          }
+        }
         .projects-container {
-          margin: 20px auto;
+          margin: 20px;
           width: 500px;
           height:500px;
           display:grid;
