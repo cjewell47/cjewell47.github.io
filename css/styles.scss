@@ -129,24 +129,26 @@ body {
           z-index: 0;
           position: absolute;
           left: 0;
-          color: transparent;
-          &:focus {
-            outline: none;
-          }
-          &::before, &::after {
-            content: attr(data-section);
-            position: absolute;
-            top: 0;
-            left: 0;
-          }
-          &::before {
-            color: #000;
-            clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
-          }
-          &::after {
-            color: #1a1a1a;
-            clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
-            animation: slide 3.5s infinite;
+          @supports (clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%)) {
+            color: transparent;
+            &:focus {
+              outline: none;
+            }
+            &::before, &::after {
+              content: attr(data-section);
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            &::before {
+              color: #000;
+              clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
+            }
+            &::after {
+              color: #1a1a1a;
+              clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
+              animation: slide 3.5s infinite;
+            }
           }
         }
       }
