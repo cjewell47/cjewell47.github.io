@@ -425,6 +425,12 @@ body {
           }
         }
       }
+      &.support {
+        display: none;
+        &.current {
+          display: block;
+        }
+      }
     }
   }
   .main-content-mob, .mob-menu, .mobile-menu-container {

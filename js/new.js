@@ -1,5 +1,12 @@
 $(function() {
 
+  if (navigator.userAgent.indexOf('Trident') > -1 || navigator.userAgent.indexOf('Edge') > -1) {
+    $('.content.default').addClass('hidden');
+    $('.content.default').removeClass('current');
+    $('.content.support').removeClass('hidden');
+    $('.content.support').addClass('current');
+  }
+
   $('.header-item').click(function() {
     $('.header-item.current').removeClass('current');
     $(this).addClass('current');
