@@ -1,0 +1,57 @@
+[
+    {
+        "code": "bl",
+        "name": "Blend Life",
+        "img1": "/BlendLifeBW-min.jpg",
+        "img2": "/BlendLife-min.jpg",
+        "link": "https://intense-dusk-18560.herokuapp.com/", 
+        "link2": {
+            "link": "https://github.com/cjewell47/blend-life-client",
+            "name": "Visit the client side repo"
+        },
+        "link3": {
+            "link": "https://github.com/cjewell47/blend-life-api",
+            "name": "Visit the API repo"
+        }
+    },
+    {
+        "code": "ffp",
+        "name": "Financial Fitness Plan",
+        "img1": "/ffpbw.jpg",
+        "img2": "/ffp.jpg",
+        "link": "https://www.experian.co.uk/consumer/financial-fitness-plan/"
+    },
+    {
+        "code": "pp",
+        "name": "Paws and Play",
+        "img1": "/PawsAndPlayBW-min.jpg",
+        "img2": "/PawsAndPlay-min.jpg",
+        "link": "https://dogwalkingapp.herokuapp.com/",
+        "link2": {
+            "name": "Visit the repo",
+            "link": "https://github.com/cjewell47/paws-and-play"
+        }
+    },
+    {
+        "code": "sn",
+        "name": "Snake",
+        "img1": "/SnakeBW-min.png",
+        "img2": "/Snake-min.png",
+        "link": "https://stormy-forest-65305.herokuapp.com/",
+        "link2": {
+            "name": "Visit the repo",
+            "link": "https://github.com/cjewell47/snake"
+        }
+    },
+    {
+        "code": "br",
+        "name": "Beer Rater",
+        "img1": "/BeerRaterBW-min.jpg",
+        "img2": "/BeerRater-min.jpg",
+        "link": "https://evening-refuge-83030.herokuapp.com/",
+        "link2": {
+            "name": "Visit the repo",
+            "link": "https://github.com/cjewell47/beer-rater"
+        }
+    }
+]

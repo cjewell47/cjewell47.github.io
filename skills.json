@@ -1,0 +1,5 @@
+{
+    "one": ["JavaScript / ES6", "TypeScript", "Angular", "HTML", "CSS", "SCSS", "Vue.js", "Git", "Gulp", "Webpack", "Nuxt", "Jasmine", "Karma"],
+    "two": ["React", "Node.js", "Less", "jQuery", "Bootstrap", "AWS", "Jenkins", "Google Analytics", "Adobe Target", "Ensighten", "Express.js", "Jekyll", "Ruby", "Ruby on Rails", "AMP", "MongoDB"],
+    "three": ["Python", "Serverless functions", "GraphQL", "CSS Houdini"]
+}
