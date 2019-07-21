@@ -1,8 +1,8 @@
-// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-//   router: {
-//     base: '/cjewell47.github.io/'
-//   }
-// } : {}
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/cjewell47.github.io/'
+  }
+} : {}
 
 export default {
   mode: 'universal',
@@ -30,6 +30,8 @@ export default {
       }
     ]
   },
+
+  ...routerBase,
 
   /*
   ** Customize the progress-bar color
